@@ -1,0 +1,586 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+  color: #9E2A2B;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background-color: #5e8061;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+header a {
+  color: #000000;
+}
+
+
+header img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+
+.site-title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+  margin: 0 0 0 20px;
+  padding-top: 30px;
+}
+
+
+.site-title a:hover {
+  text-decoration: none;
+}
+
+
+.navbar {
+  font-size: 22px;
+  background-color: #aec6aa;
+}
+
+
+.navlist {
+  margin: 0;
+}
+
+
+.navitem {
+  display: inline-block;
+}
+
+
+.navitem:hover {
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+
+.navitem a {
+  display: inline-block;
+  color: #9E2A2B;
+  padding: 10px 20px;
+}
+
+
+.navitem.right {
+  float: right;
+}
+
+#posts{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 50%;
+}
+#intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+.intro-h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+ 
+.intro-p {
+  text-decoration: none;
+  color: #9E2A2B;
+  display: flex;
+  flex-direction: column;
+  text-align : center; 
+  padding: 10px;
+}
+
+
+.intro-post {
+  display: flex;
+  vertical-align: top;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  align-content: center;
+
+}
+
+
+.intro-post-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.intro-post-image-container img {
+  max-height: 240px;
+  max-width: 300px;
+}
+
+
+.intro-post-info-container button {
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  
+}
+
+
+.content {
+  display: flex;
+}
+
+.filter-container {
+  display: inline-block;
+  min-width: 200px;
+  max-width: 200px;
+  margin: 10px 10px auto 10px;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #efefef;
+}
+
+.filter-container h2 {
+  margin: 0;
+}
+
+.filter-input-container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.filter-input-element {
+  margin: 0 5px;
+  flex: 1 1 100%;
+}
+
+.filter-input {
+  font-size: 14px;
+  width: 100%;
+  margin-left: 10px;
+  padding: 3px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  display: flex;
+}
+
+.filter-fieldset {
+  flex: 1 100%;
+  border: 1px solid #ababab;
+}
+
+.action-button {
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  background-color: #9E2A2B;
+  border: 1px solid #ababab;
+  border-radius: 5px;
+  font-weight: lighter;
+  cursor: pointer;
+  align-items: center;
+
+}
+
+.action-button:hover {
+  background-color: #f9d2b2;
+  border-color: #333;
+  color: #333;
+}
+
+#filter-update-button {
+  width: 100%;
+}
+
+.post {
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  
+}
+
+.post-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.post-image-container img {
+  display: flex;
+  height: 200px;
+  width: 300px;
+  
+}
+
+.post-info-container {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align : center; 
+}
+
+.post-price {
+  display: inline-block;
+  font-size: 80%;
+  padding: 3px;
+  margin: 3px 5px;
+  border: 1px solid #ababab;
+  border-radius: 3px;
+  background: #efefef;
+  
+}
+
+#sell-something-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  font-size: 36px;
+  background-color: #9E2A2B;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#sell-something-button:hover,
+#sell-something-button:focus {
+  right: 27px;
+  bottom: 27px;
+  height: 66px;
+  width: 66px;
+  border-radius: 33px;
+  font-size: 40px;
+}
+
+/*jeol new*/
+#find-recipe-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  font-size: 24px;
+  background-color: #9E2A2B;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+  border-style: solid;
+  border-color:black;
+}
+
+#find-recipe-button:hover,
+#find-recipe-button:focus {
+  background-color: #FFF9D6;
+  color: black;
+  border-style: solid;
+  border-color:black;
+}
+
+
+.search-find-container{
+  position:fixed;
+  right:300px;
+  display: flex;
+}
+
+.find-filter-container {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin: 10px 10px auto 10px;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #FFF9D6;
+  border-style: solid;
+  border-color: black;
+  
+}
+
+
+
+.find-filter-container h2 {
+  display:flex;
+  justify-content: center;
+}
+
+.find-filter-input-container {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.find-filter-input-element {
+  margin: 0 5px;
+  flex: 1 1 100%;
+}
+
+.find-filter-input {
+  font-size: 14px;
+  width: 100%;
+  margin-left: 10px;
+  padding: 3px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+
+.find-filter-fieldset {
+  flex: 1 100%;
+  border: 1px solid #ababab;
+}
+
+
+/*emnd ogf jeole*/
+
+#sell-something-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+  display: none;
+}
+
+
+#sell-something-button:focus {
+  outline: none;
+}
+
+/*
+ * Modal stuff
+ */
+
+#modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+}
+
+#add-recipe-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.hidden {
+  display: none;
+
+}
+
+
+.modal-dialog {
+  width: auto;
+  max-width: 600px;
+  min-width: 350px;
+  min-height: 300px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.modal-header {
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+#modal-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.post-input-element {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.post-input-element > label {
+  font-weight: 600;
+  flex: 1 75px;
+  margin-right: 10px;
+}
+
+.post-input-element input {
+  flex: 6 200px;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid #aaa;
+}
+
+.post-fieldset {
+  flex: 1 100%;
+  border: 1px solid #ababab;
+}
+
+.modal-footer {
+  
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px 20px 10px;
+}
+
+#modal-cancel,
+#modal-accept {
+  margin-right: 20px;
+  align-items: center;
+}
+
+#modal-cancel {
+  color: #333;
+  background-color: #fff;
+}
+
+#modal-cancel:hover {
+  background-color: #eee;
+}
+
+/*
+ * 404 page stuff
+ */
+
+.error-container {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+.error-container h2 {
+  font-size: 128px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.error-container h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.popup-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888888;
+  width: 30%;
+  font-weight: bolder;
+}
+.popup-content button {
+  display: block;
+  margin: 0 auto;
+}
+.show {
+  display: block;
+}
+
+#addRecipeButton{
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  background-color: #9E2A2B;
+  border: 1px solid #ababab;
+  border-radius: 5px;
+  font-weight: lighter;
+  cursor: pointer;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.button-container{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.current{
+  background-color:#FFF9D6;
+}

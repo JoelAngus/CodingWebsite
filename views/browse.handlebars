@@ -1,0 +1,67 @@
+<main class="post-container">
+{{#if browse}}
+    {{#each recipes}}
+        {{> recipePost}}
+    {{/each}}
+    
+{{else}}
+    {{#each recipes}}
+        {{#unless library}}
+            {{>recipePost}}
+        {{/unless}}
+    {{/each}}
+
+
+  <div class="post" id="AddPost">
+  <div class="post-contents">
+    <div class="intro-post-image-container">
+      <a href="/myPosts/newPost" class="intro-post-title"><img src="https://cdn0.iconfinder.com/data/icons/glyphpack/50/plus-rounded-512.png" alt="Add a New Post"></a>
+    </div>
+    <div class="intro-post-info-container">
+      <a href="/myPosts/newPost" class="intro-post-title"><button type="button" id="modal-accept" class="action-button">Post a New Post</button></a>
+    </div>
+  </div>
+  </div>
+
+<div id="modal-backdrop" class="hidden"></div>
+    <div id="add-recipe-modal" class="hidden">
+      <div class="add-dialog" class ="hidden">
+
+        <div class="modal-header">
+          <h3>Add a New Post!</h3>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="post-input-element">
+            <label for="post-name-input">Name of Post</label>
+            <input type="text" id="post-name-input"></input>
+          </div>
+
+          <div class="post-input-element">
+            <label for="post-ingredients-input">Description</label>
+            <input type="text" id="post-ingredients-input">
+          </div>
+
+          <div class="post-input-element">
+            <label for="post-link-input">Link to Github</label>
+            <input type="text" id="post-link-input">
+          </div>
+
+          <div class="post-input-element">
+            <label for="post-photo-input">Link to Cover Image</label>
+            <input type="text" id="post-photo-input">
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="hideAddRecipe" class="modal-hide-button action-button">Cancel</button>
+          <button type="button" id="acceptRecipe" class="action-button">Add Post</button>
+        </div>
+
+      </div>
+    </div>
+    
+{{/if}}
+</main>
