@@ -9,5 +9,5 @@ How to request and recieve data:
     One completed, the data will be sent over to the python file as a json and it will be read and printed out.
     In future programs, we will work with this data instead of printing it out.
 
-
     
+    <img width="614" alt="uml seq" src="https://github.com/JoelAngus/CodingWebsite/assets/127352604/f18611bd-c0ed-49a7-9b29-6dbc4956ba80">
